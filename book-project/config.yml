@@ -25,6 +25,10 @@ params:
     description: "Book Publishing"
     author: 
     # author: ["Me", "You"] # multiple authors
+    
+    mainSections:
+    - dracula
+    - wuthering-heights
 
     defaultTheme: auto
     # disableThemeToggle: true
