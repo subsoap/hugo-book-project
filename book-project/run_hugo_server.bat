@@ -1,0 +1,3 @@
+start "google" "c:\program files (x86)\Google\Chrome\Application\chrome.exe" "http://localhost:1313/books/"
+hugo -D server
+set /p DUMMY=Hit ENTER to continue...
