@@ -1,6 +1,8 @@
 # hugo-book-project
 Book publishing project with Hugo
 
+This example is being set up primarily for [Tarot.io](https://www.tarot.io/) for its upcoming free online library of experimental books.
+
 Note: I'm not actually going to republish classic books (only publishing new books) but some chapters of public domain books are included for the example.
 
 Things to change/add/fix:
@@ -12,6 +14,7 @@ Things to change/add/fix:
 * Add and enable this webfont https://fonts.google.com/specimen/Poppins?preview.text_type=custom
 * Disable the chapter blurb, some people may view it as a spoiler trap
 * Add a link to jump to the book chapter 1 and book front from the section page of a book
+* For breadcrumbs, if it is the final page, loop back for the front for the "next"
 
 
 Resolved
