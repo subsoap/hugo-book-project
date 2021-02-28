@@ -4,10 +4,6 @@ author: Bram Stoker
 searchHidden: false
 draft: false
 date: 1614545832
-tags:
-- Horror
-- Vampires
-- Classic
 ---
 
 JONATHAN HARKER’S JOURNAL
