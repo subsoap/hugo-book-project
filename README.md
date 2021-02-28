@@ -3,6 +3,10 @@ Book publishing project with Hugo
 
 This example is being set up primarily for [Tarot.io](https://www.tarot.io/) for its upcoming free online library of experimental books.
 
+This example is useful for implementing the webnovel publishing format where typically single chapters are published online for free one chapter at a time.
+
+This example supports multiple books being published on the same Hugo setup at once.
+
 Note: I'm not actually going to republish classic books (only publishing new books) but some chapters of public domain books are included for the example.
 
 Things to change/add/fix:
