@@ -6,6 +6,4 @@ ShowBreadCrumbs: false
 ShowPostNavLinks: false
 ---
 
-List of all books goes here.
-
 {{< listbooks >}}

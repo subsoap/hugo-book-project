@@ -1,2 +1,5 @@
-test list books
+{{ $sections := where .Site.RegularPages "Section" "in" site.Params.mainSections }}
 
+{{ range sort .Site.Sections}}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}

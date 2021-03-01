@@ -30,6 +30,9 @@ params:
     mainSections:
     - dracula
     - wuthering-heights
+    
+    featuredSections:
+    - dracula 
 
     defaultTheme: auto
     # disableThemeToggle: true
