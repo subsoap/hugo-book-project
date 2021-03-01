@@ -1,5 +1,3 @@
-{{ $sections := where .Site.RegularPages "Section" "in" site.Params.mainSections }}
-
-{{ range sort .Site.Sections}}
+{{ range  (where .Site.Sections "Type" "in" .Site.Params.mainSections).ByTitle }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}

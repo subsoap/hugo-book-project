@@ -11,8 +11,6 @@ Note: I'm not actually going to republish classic books (only publishing new boo
 
 Things to change/add/fix:
 
-* Featured can be static
-* List should be a list of books, it can also be static
 * If the book detects final page say so in a nice way?
 * Add and enable this webfont https://fonts.google.com/specimen/Poppins?preview.text_type=custom
 * For breadcrumbs, if it is the final page, loop back for the front for the "next"
@@ -27,3 +25,5 @@ Resolved
 * Maybe swap the left/right of the "next page / previous page" widget so it's more logical to reading a book, might be other moving parts related to that which are going to require special changes to work cleanly
 * Disable the chapter blurb, some people may view it as a spoiler trap
 * Add a link to jump to the book chapter 1 and book front from the section page of a book
+* Featured can be static
+* List should be a list of books, it can also be static

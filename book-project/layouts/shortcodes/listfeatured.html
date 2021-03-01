@@ -1,0 +1,3 @@
+{{ range  (where .Site.Sections "Type" "in" .Site.Params.featuredSections).ByTitle }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
