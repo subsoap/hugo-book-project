@@ -15,6 +15,7 @@ Things to change/add/fix:
 
 * If the book detects final page say so in a nice way?
 * For breadcrumbs, if it is the final page, loop back for the front for the "next"
+* Maybe define cover images in sections so they can be used in list / featured
 
 
 Resolved

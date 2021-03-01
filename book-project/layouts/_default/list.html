@@ -9,11 +9,6 @@
   {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1>
   {{- if .Description }}
-  <style>
-	.post-description a {
-		text-decoration: underline;
-	}  
-  </style>
   <div class="post-description">
     {{ .Description | .Page.RenderString}}
   </div>
