@@ -4,6 +4,7 @@ author: Bram Stoker
 searchHidden: false
 draft: false
 date: 1614545830
+ShowBreadCrumbs: false
 tags:
 - Horror
 - Vampires

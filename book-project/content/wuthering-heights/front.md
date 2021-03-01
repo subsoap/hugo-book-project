@@ -4,6 +4,7 @@ author: Emily Brontë
 searchHidden: false
 draft: false
 date: 1614546487
+ShowBreadCrumbs: false
 tags:
 - Romance
 - Classic

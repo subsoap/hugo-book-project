@@ -150,7 +150,7 @@ menu:
     - identifier: featured
       name: Featured
       url: /featured/
-      weight: 10
+      weight: 9
     - identifier: list
       name: List
       url: /list/
@@ -158,12 +158,16 @@ menu:
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 11
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 20
+      weight: 11   
     - identifier: search
       name: Search
       url: /search/
       weight: 15
+    - identifier: meta
+      name: Meta
+      url: /meta/
+      weight: 16
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
