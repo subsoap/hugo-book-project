@@ -7,7 +7,7 @@
     <p>
 	<a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
 		{{ .Title }}
-		{{- if .Draft }}<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{- end }}
+		{{- if .Draft }}<sup>&nbsp;&nbsp;[draft]</sup>{{- end }}
 		{{- if not .Date.IsZero -}}
 		&nbsp;-&nbsp;
 		{{- (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat)) }}

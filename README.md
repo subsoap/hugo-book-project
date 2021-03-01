@@ -9,10 +9,11 @@ This example supports multiple books being published on the same Hugo setup at o
 
 Note: I'm not actually going to republish classic books (only publishing new books) but some chapters of public domain books are included for the example.
 
+Date timestamps are got from here https://timestampnow.com/ manually but you can use any date format Hugo supports.
+
 Things to change/add/fix:
 
 * If the book detects final page say so in a nice way?
-* Add and enable this webfont https://fonts.google.com/specimen/Poppins?preview.text_type=custom
 * For breadcrumbs, if it is the final page, loop back for the front for the "next"
 
 
@@ -27,3 +28,4 @@ Resolved
 * Add a link to jump to the book chapter 1 and book front from the section page of a book
 * Featured can be static
 * List should be a list of books, it can also be static
+* Add and enable this webfont https://fonts.google.com/specimen/Poppins?preview.text_type=custom

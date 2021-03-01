@@ -26,6 +26,34 @@
 	</ul>
 	{{- end }}
   </header>
+  <footer>
+
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- $pages := where site.RegularPages "Section" "==" .Section }}
+    {{- if and (gt (len $pages) 1) (in $pages . ) }}
+    <nav class="paginav">
+      {{- with $pages.Prev . }}
+      <a class="prev" href="{{.Permalink}}">
+        <span class="title">« Previous</span>
+        <br>
+        <span>{{- .Name -}}</span>
+      </a>
+      {{- end}}	 	
+      {{- with $pages.Next . }}
+      <a class="next" href="{{.Permalink}}">
+        <span class="title">Next »</span>
+        <br>
+        <span>{{- .Name -}}</span>
+      </a>
+      {{- end}}
+ 
+    </nav>
+    {{- end }}
+    {{- end }}
+    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true) ) }}
+    {{- partial "share_icons.html" . }}
+    {{- end }}
+  </footer>  
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden}}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
