@@ -1,20 +1,20 @@
 {{- $pages := where site.RegularPages "Section" "==" $.Page.Section }}
 
-{{- range $index, $pages }}
-
-{{- $class := "post-entry" }}
+{{- range first 5 $pages}}
 
 <article>
   <header>
     <p>
+	<a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
 		{{ .Title }}
 		{{- if .Draft }}<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{- end }}
 		{{- if not .Date.IsZero -}}
 		&nbsp;-&nbsp;
 		{{- (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat)) }}
-		{{- end -}}	  
+		{{- end -}}
+	</a>		
     </p>
   </header>
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+
 </article>
 {{- end }}

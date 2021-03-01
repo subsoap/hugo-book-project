@@ -13,4 +13,10 @@ Extra descriptions goes here.
 
 Book should be marked as completed or not.
 
-List of chapters goes here. Maybe with UI to make it easy to reverse the list. Chapters should show publish date next to them.
+### Latest
+
+{{< listlatestchapters >}}
+
+### All
+
+{{< listchapters >}}

@@ -18,6 +18,13 @@
       {{- partial "translation_list.html" . -}}
     </div>
     {{- end}}
+	{{- if .Params.tags }}
+	<ul class="post-tags">
+	  {{- range ($.GetTerms "tags") }}
+	  <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+	  {{- end }}
+	</ul>
+	{{- end }}
   </header>
   {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden}}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
@@ -37,13 +44,7 @@
     {{- partial "anchored_headings.html" .Content -}}
   </div>
   <footer class="post-footer">
-    {{- if .Params.tags }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms "tags") }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
-    {{- end }}
+
     {{- if (.Param "ShowPostNavLinks") }}
     {{- $pages := where site.RegularPages "Section" "==" .Section }}
     {{- if and (gt (len $pages) 1) (in $pages . ) }}

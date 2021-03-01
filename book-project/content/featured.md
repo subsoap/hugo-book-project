@@ -7,3 +7,5 @@ ShowPostNavLinks: false
 ---
 
 Featured books go here.
+
+{{< listfeatured >}}
