@@ -25,6 +25,7 @@ params:
     description: "Book Publishing"
     author: 
     # author: ["Me", "You"] # multiple authors
+    hideSummary: true
     
     mainSections:
     - dracula
