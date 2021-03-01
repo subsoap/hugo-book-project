@@ -15,7 +15,6 @@ Things to change/add/fix:
 * List should be a list of books, it can also be static
 * If the book detects final page say so in a nice way?
 * Add and enable this webfont https://fonts.google.com/specimen/Poppins?preview.text_type=custom
-* Disable the chapter blurb, some people may view it as a spoiler trap
 * Add a link to jump to the book chapter 1 and book front from the section page of a book
 * For breadcrumbs, if it is the final page, loop back for the front for the "next"
 
@@ -27,3 +26,4 @@ Resolved
 * Tags are not working fully properly (actually with this project they appear to be working proplery so ??? for now, I must have something wrong set in my other project)
 * Add way to disable breadcrumbs on a page (just set ShowBreadCrumbs: false in the frontmatter of a page)
 * Maybe swap the left/right of the "next page / previous page" widget so it's more logical to reading a book, might be other moving parts related to that which are going to require special changes to work cleanly
+* Disable the chapter blurb, some people may view it as a spoiler trap
