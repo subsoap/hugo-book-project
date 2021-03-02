@@ -1,0 +1,13 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<style>
+body {
+    background-image: url({{ .Site.BaseURL }}images/bgs/{{ .Get 0 }}-light.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;	
+}
+.dark {
+    background-image: url({{ .Site.BaseURL }}images/bgs/{{ .Get 0 }}-dark.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;	
+}
+</style>

@@ -7,3 +7,5 @@ ShowPostNavLinks: false
 ---
 
 {{< listfeatured >}}
+
+{{< setbackgroundimage dracula>}}

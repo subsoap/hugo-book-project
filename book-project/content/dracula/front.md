@@ -25,3 +25,5 @@ Count Dracula, a 15th-century prince, is condemned to live off the blood of the 
 ### All
 
 {{< listchapters >}}
+
+{{< setbackgroundimage dracula>}}
