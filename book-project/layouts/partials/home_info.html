@@ -1,0 +1,27 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{- with $.Site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{- .Title | markdownify }}</h1>
+    </header>
+    <section class="entry-content">
+        <p>{{- .Content | markdownify }}</p>
+    </section>
+    <footer class="entry-footer">
+        {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+    </footer>
+</article>
+<style>
+.list {
+    background-image: url({{ .Site.BaseURL }}images/bgs/publishing-light-list.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;	
+}
+.dark.list {
+    background-image: url({{ .Site.BaseURL }}images/bgs/publishing-dark.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;	
+}
+</style>
+
+{{- end}}
